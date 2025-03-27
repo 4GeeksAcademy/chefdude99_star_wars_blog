@@ -1,0 +1,13 @@
+#root{
+    background-color: black;
+    color: white;
+}
+  
+.navbar-principal{
+    background-color: black;
+}
+
+.botones-card{
+    display: flex;
+    justify-content: space-between;
+}
