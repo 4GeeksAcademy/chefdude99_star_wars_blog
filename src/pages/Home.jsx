@@ -1,14 +1,12 @@
 import rigoImageUrl from "../assets/img/rigo-baby.jpg";
+import CardNaves from "../components/CardNaves.jsx";
 import CardPersonajes from "../components/CardPersonajes.jsx";
 import CardPlanetas from "../components/CardPlanetas.jsx";
-import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 
 export const Home = () => {
 
-	const { store, dispatch } = useGlobalReducer()
-
 	return (
-		<div className="principal container mt-5">
+		<div className="principal container mt-3">
 			<h1>Personajes</h1>
 			<br />
 			<CardPersonajes />
@@ -16,6 +14,10 @@ export const Home = () => {
 			<h1>Planetas</h1>
 			<br />
 			<CardPlanetas />
+			<br />
+			<h1>Planetas</h1>
+			<br />
+			<CardNaves />
 		</div>
 	);
 }; 
